@@ -2,60 +2,108 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Motor</title>
+    <title>Profil Saya</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
         }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
+        td, th {
             padding: 10px;
-            text-align: left;
+            vertical-align: top;
         }
-        th {
-            background-color: #f2f2f2;
+        .menu {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        .menu a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .judul {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+        }
+        .portfolio-item {
+            border: 1px solid #aaa;
+            padding: 15px;
         }
     </style>
 </head>
 <body>
 
-    <h2>Daftar Motor</h2>
+<!-- SECTION 1: MENU -->
+<table>
+    <tr class="menu">
+        <td colspan="2">
+            <a href="#profil">Profil</a>
+            <a href="#biodata">Biodata</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#kontak">Kontak</a>
+        </td>
+    </tr>
+</table>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Merek</th>
-                <th>Warna</th>
-                <th>Harga</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Yamaha</td>
-                <td>Merah</td>
-                <td>Rp 25.000.000</td>
-            </tr>
-            <tr>
-                <td>Honda</td>
-                <td>Hitam</td>
-                <td>Rp 23.500.000</td>
-            </tr>
-            <tr>
-                <td>Kawasaki</td>
-                <td>Hijau</td>
-                <td>Rp 35.000.000</td>
-            </tr>
-            <tr>
-                <td>BMW</td>
-                <td>Putih</td>
-                <td>Rp 150.000.000</td>
-            </tr>
-        </tbody>
-    </table>
+<!-- SECTION 2: JUDUL & GAMBAR -->
+<table>
+    <tr>
+        <td class="judul" width="70%">
+            <h1 id="profil">Halo, Saya Nama Anda</h1>
+            <p>Seorang Web Developer yang berfokus pada Front-End.</p>
+        </td>
+        <td width="30%">
+            <img src="./nino.jpg" alt="Foto Profil" style="width: 100%; border-radius: 10px;">
+        </td>
+    </tr>
+</table>
+
+<!-- SECTION 3: BIODATA -->
+<table>
+    <tr>
+        <td colspan="3"><h2 id="biodata">Biodata</h2></td>
+    </tr>
+    <tr>
+        <td class="box">Nama: Nama Anda</td>
+        <td class="box">Tanggal Lahir: 1 Januari 2000</td>
+        <td class="box">Jenis Kelamin: Laki-laki</td>
+    </tr>
+    <tr>
+        <td class="box">Alamat: Jakarta</td>
+        <td class="box">Email: email@example.com</td>
+        <td class="box">Telepon: 0812-3456-7890</td>
+    </tr>
+</table>
+
+<!-- SECTION 4: PORTOFOLIO -->
+<table>
+    <tr>
+        <td colspan="2"><h2 id="portofolio">Portofolio</h2></td>
+    </tr>
+    <tr>
+        <td class="portfolio-item">
+            <strong>Proyek 1</strong><br>
+            Website Toko Online<br>
+            <a href="#">Lihat Proyek</a>
+        </td>
+        <td class="portfolio-item">
+            <strong>Proyek 2</strong><br>
+            Aplikasi Manajemen Tugas<br>
+            <a href="#">Lihat Proyek</a>
+        </td>
+    </tr>
+</table>
 
 </body>
 </html>
